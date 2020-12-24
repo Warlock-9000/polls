@@ -8,7 +8,7 @@
 
 require_once 'config.php';
 
-$mysqli= new mysqli(MYSQL_HOST,MYSQL_USER,MYSQL_PASSWORD,MYSQL_DB);
+$mysqli= new mysqli(MYSQL_HOST,MYSQL_USER,MYSQL_PASSWORD,MYSQL_DB, MYSQL_PORT);
 if ($mysqli->connect_errno) {
     echo "Не удалось подключиться к MySQL: " . $mysqli->connect_error;
     exit;
